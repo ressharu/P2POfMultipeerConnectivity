@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		43555A832C410A6D003700DB /* P2POfMultipeerConnectivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555A822C410A6D003700DB /* P2POfMultipeerConnectivityApp.swift */; };
-		43555A852C410A6D003700DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555A842C410A6D003700DB /* ContentView.swift */; };
-		43555A872C410A6D003700DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555A862C410A6D003700DB /* Item.swift */; };
 		43555A892C410A6E003700DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43555A882C410A6E003700DB /* Assets.xcassets */; };
 		43555A8D2C410A6E003700DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43555A8C2C410A6E003700DB /* Preview Assets.xcassets */; };
 		43555A972C410A6F003700DB /* P2POfMultipeerConnectivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555A962C410A6F003700DB /* P2POfMultipeerConnectivityTests.swift */; };
 		43555AA12C410A6F003700DB /* P2POfMultipeerConnectivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555AA02C410A6F003700DB /* P2POfMultipeerConnectivityUITests.swift */; };
 		43555AA32C410A6F003700DB /* P2POfMultipeerConnectivityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555AA22C410A6F003700DB /* P2POfMultipeerConnectivityUITestsLaunchTests.swift */; };
+		43555AB62C413182003700DB /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555AB52C413182003700DB /* MultipeerManager.swift */; };
+		43555AB82C4131B5003700DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555AB72C4131B5003700DB /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		43555A7F2C410A6D003700DB /* P2POfMultipeerConnectivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2POfMultipeerConnectivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43555A822C410A6D003700DB /* P2POfMultipeerConnectivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2POfMultipeerConnectivityApp.swift; sourceTree = "<group>"; };
-		43555A842C410A6D003700DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		43555A862C410A6D003700DB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		43555A882C410A6E003700DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43555A8A2C410A6E003700DB /* P2POfMultipeerConnectivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = P2POfMultipeerConnectivity.entitlements; sourceTree = "<group>"; };
 		43555A8C2C410A6E003700DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +45,10 @@
 		43555A9C2C410A6F003700DB /* P2POfMultipeerConnectivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P2POfMultipeerConnectivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43555AA02C410A6F003700DB /* P2POfMultipeerConnectivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2POfMultipeerConnectivityUITests.swift; sourceTree = "<group>"; };
 		43555AA22C410A6F003700DB /* P2POfMultipeerConnectivityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2POfMultipeerConnectivityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43555AB52C413182003700DB /* MultipeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerManager.swift; sourceTree = "<group>"; };
+		43555AB72C4131B5003700DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		43555AB92C415216003700DB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		43555ABA2C4156D3003700DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +99,12 @@
 		43555A812C410A6D003700DB /* P2POfMultipeerConnectivity */ = {
 			isa = PBXGroup;
 			children = (
+				43555ABA2C4156D3003700DB /* Info.plist */,
 				43555A822C410A6D003700DB /* P2POfMultipeerConnectivityApp.swift */,
-				43555A842C410A6D003700DB /* ContentView.swift */,
-				43555A862C410A6D003700DB /* Item.swift */,
+				43555AB72C4131B5003700DB /* ContentView.swift */,
+				43555AB52C413182003700DB /* MultipeerManager.swift */,
 				43555A882C410A6E003700DB /* Assets.xcassets */,
+				43555AB92C415216003700DB /* PrivacyInfo.xcprivacy */,
 				43555A8A2C410A6E003700DB /* P2POfMultipeerConnectivity.entitlements */,
 				43555A8B2C410A6E003700DB /* Preview Content */,
 			);
@@ -262,8 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43555A852C410A6D003700DB /* ContentView.swift in Sources */,
-				43555A872C410A6D003700DB /* Item.swift in Sources */,
+				43555AB62C413182003700DB /* MultipeerManager.swift in Sources */,
+				43555AB82C4131B5003700DB /* ContentView.swift in Sources */,
 				43555A832C410A6D003700DB /* P2POfMultipeerConnectivityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +432,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = P2POfMultipeerConnectivity/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -466,6 +471,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = P2POfMultipeerConnectivity/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
