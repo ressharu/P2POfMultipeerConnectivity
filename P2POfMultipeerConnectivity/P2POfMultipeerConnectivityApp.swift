@@ -11,7 +11,7 @@ import SwiftUI
 struct P2POfMultipeerConnectivityApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }
