@@ -34,7 +34,9 @@ class MultipeerManager: NSObject, ObservableObject {
         let data = Data(message.utf8) // 文字列をデータに変換
         do {
             try peerConnectionManager.send(data: data, toPeers: peerConnectionManager.connectedPeers) // データを接続されているピアに送信
-            messages.append("Me: \(message)") // 自分のメッセージを追加
+            if(message != ""){
+                messages.append("Me: \(message)") // 自分のメッセージを追加
+            }
         } catch {
             print("Error sending message: \(error.localizedDescription)") // メッセージ送信エラーの処理
         }

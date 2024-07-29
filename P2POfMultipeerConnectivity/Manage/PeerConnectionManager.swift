@@ -5,7 +5,6 @@
 //  Created by 渡邉華輝 on 2024/07/13.
 //
 
-// PeerConnectionManagerクラスにinviteメソッドを追加
 import MultipeerConnectivity
 
 class PeerConnectionManager: NSObject {
@@ -73,8 +72,6 @@ extension PeerConnectionManager: MCNearbyServiceAdvertiserDelegate, MCNearbyServ
         print("Found peer: \(peerID)")
         delegate?.didDiscoverPeer(peerID)
         
-        // 自動で接続するロジック
-        invite(peer: peerID)
     }
     
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {

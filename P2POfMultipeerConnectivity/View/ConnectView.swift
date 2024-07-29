@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct ConnectView: View {
-    @StateObject private var multipeerManager = MultipeerManager()
-    @State private var message = ""
+    @EnvironmentObject var multipeerManager: MultipeerManager
 
     var body: some View {
         NavigationView {
@@ -41,11 +40,5 @@ struct ConnectView: View {
             }
             .navigationBarTitle("Multipeer Chat", displayMode: .inline)
         }
-    }
-}
-
-struct ConnectView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConnectView()
     }
 }
