@@ -10,9 +10,6 @@
 		43555A832C410A6D003700DB /* P2POfMultipeerConnectivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555A822C410A6D003700DB /* P2POfMultipeerConnectivityApp.swift */; };
 		43555A892C410A6E003700DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43555A882C410A6E003700DB /* Assets.xcassets */; };
 		43555A8D2C410A6E003700DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43555A8C2C410A6E003700DB /* Preview Assets.xcassets */; };
-		43555A972C410A6F003700DB /* P2POfMultipeerConnectivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555A962C410A6F003700DB /* P2POfMultipeerConnectivityTests.swift */; };
-		43555AA12C410A6F003700DB /* P2POfMultipeerConnectivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555AA02C410A6F003700DB /* P2POfMultipeerConnectivityUITests.swift */; };
-		43555AA32C410A6F003700DB /* P2POfMultipeerConnectivityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555AA22C410A6F003700DB /* P2POfMultipeerConnectivityUITestsLaunchTests.swift */; };
 		43555AB62C413182003700DB /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555AB52C413182003700DB /* MultipeerManager.swift */; };
 		43555AB82C4131B5003700DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555AB72C4131B5003700DB /* ContentView.swift */; };
 		43555ABC2C417B2A003700DB /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43555ABB2C417B2A003700DB /* ConnectView.swift */; };
@@ -44,10 +41,7 @@
 		43555A8A2C410A6E003700DB /* P2POfMultipeerConnectivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = P2POfMultipeerConnectivity.entitlements; sourceTree = "<group>"; };
 		43555A8C2C410A6E003700DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43555A922C410A6F003700DB /* P2POfMultipeerConnectivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P2POfMultipeerConnectivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43555A962C410A6F003700DB /* P2POfMultipeerConnectivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2POfMultipeerConnectivityTests.swift; sourceTree = "<group>"; };
 		43555A9C2C410A6F003700DB /* P2POfMultipeerConnectivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P2POfMultipeerConnectivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43555AA02C410A6F003700DB /* P2POfMultipeerConnectivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2POfMultipeerConnectivityUITests.swift; sourceTree = "<group>"; };
-		43555AA22C410A6F003700DB /* P2POfMultipeerConnectivityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2POfMultipeerConnectivityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43555AB52C413182003700DB /* MultipeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerManager.swift; sourceTree = "<group>"; };
 		43555AB72C4131B5003700DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43555ABA2C4156D3003700DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -85,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				43555A812C410A6D003700DB /* P2POfMultipeerConnectivity */,
-				43555A952C410A6F003700DB /* P2POfMultipeerConnectivityTests */,
-				43555A9F2C410A6F003700DB /* P2POfMultipeerConnectivityUITests */,
 				43555A802C410A6D003700DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,23 +113,6 @@
 				43555A8C2C410A6E003700DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		43555A952C410A6F003700DB /* P2POfMultipeerConnectivityTests */ = {
-			isa = PBXGroup;
-			children = (
-				43555A962C410A6F003700DB /* P2POfMultipeerConnectivityTests.swift */,
-			);
-			path = P2POfMultipeerConnectivityTests;
-			sourceTree = "<group>";
-		};
-		43555A9F2C410A6F003700DB /* P2POfMultipeerConnectivityUITests */ = {
-			isa = PBXGroup;
-			children = (
-				43555AA02C410A6F003700DB /* P2POfMultipeerConnectivityUITests.swift */,
-				43555AA22C410A6F003700DB /* P2POfMultipeerConnectivityUITestsLaunchTests.swift */,
-			);
-			path = P2POfMultipeerConnectivityUITests;
 			sourceTree = "<group>";
 		};
 		43555ABF2C417F2F003700DB /* Manage */ = {
@@ -302,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43555A972C410A6F003700DB /* P2POfMultipeerConnectivityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,8 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43555AA12C410A6F003700DB /* P2POfMultipeerConnectivityUITests.swift in Sources */,
-				43555AA32C410A6F003700DB /* P2POfMultipeerConnectivityUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
